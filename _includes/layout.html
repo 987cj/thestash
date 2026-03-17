@@ -3,15 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/bundle.css">
 	<title>{{ title | default: "987cj" }}</title>
 </head>
 <body>
+	<nav>
+		<ul>
+			<li><a href="/">987cj</a></li>
+			<li>Projects</li>
+			<li><a href="/articles/">Articles</a></li>
+		</ul>
+	</nav>
 	<header>
 		<h1> {{ title }} </h1>
 		<h3> {{ date }} </h3>
+		{% for tag in pagetags %}
+			<h5>{{ tag }}</h5>
+		{% endfor %}
 	</header>
 	<main>
 		{{ content }}
 	</main>
+	<footer>
+		<h4>Made using Eleventy</h4>
+	</footer>
 </body>
 </html>

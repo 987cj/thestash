@@ -1,0 +1,40 @@
+body {
+	margin: 0;
+	position: relative;
+	min-height: 105vh;
+}
+
+nav {
+	position: sticky;
+	top: 0;
+	background-color: grey;
+	padding: 1% 8%;
+}
+
+nav ul {
+	display: flex;
+	justify-content: flex-start;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+nav ul li {
+	padding-right: 2%;
+}
+
+header {
+	padding: 2% 8%;
+}
+
+main {
+	padding: 15%;
+	padding-top: 0;
+	padding-bottom: 5vh;
+}
+
+footer {
+	height: 5vh;
+	width: 100%;
+	background-color: grey;
+	padding: 8%;
+}
