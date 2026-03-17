@@ -1,4 +1,8 @@
-## Build
+## Build:
 - `npm install`
-- `npx @11ty/eleventy` to build the site in _site/
-- add `--serve` flag to run on localhost
+- `npm run build`
+- `npx @11ty/eleventy --serve` to run the site on localhost
+
+## Built With:
+- Eleventy (Static Site Generator)
+- Pagefind (Search Library)
