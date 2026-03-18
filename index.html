@@ -1,9 +1,14 @@
 ---
 layout: layout.html
 ---
+<div class="p-8 mb-8 inset-ring bg-neutral-50">
 <h1>Who am I?</h1>
-<p>My name is Caitlin Joyce Martyr and I am a student currently studying at Adelaide University. Here you can find my personal thoughts and works on technology.</p>
+<p>My name is Caitlin and I'm a student currently studying at Adelaide University. Here you can find my personal thoughts and works on technology. My main interests are in websites and games.</p>
+</div>
+
+<div class="p-8 inset-ring bg-neutral-50">
 <h1>Latest Articles</h1>
-{% for article in collections.article %}
-	<h2><a href="{{ article.url }}">{{ article.data.title }}</a></h2>
+{% for article in collections.article reversed limit:5%}
+	<h2><a href="{{ article.url }}" class="text-amber-600">{{ article.data.title }}</a></h2>
 {% endfor %}
+</div>

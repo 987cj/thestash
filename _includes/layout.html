@@ -3,30 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/bundle.css">
+	<link rel="stylesheet" href="/styles.css">
 
 	<title>{{ title | default: "987cj" }}</title>
 </head>
-<body>
-	<nav>
-		<ul>
-			<li><a href="/">987cj</a></li>
-			<li>Projects</li>
-			<li><a href="/articles/">Articles</a></li>
+<body class="font-sans h-screen flex flex-col">
+	<nav class="sticky inset-x-0 top-0 px-7 sm:px-15 py-3 drop-shadow-md bg-lime-600">
+		<ul class="flex">
+			<li class="pr-2 font-extrabold"><a href="/">987cj</a></li>
+			<li class="pr-2 font-semibold">Projects</li>
+			<li class="pr-2 font-semibold"><a href="/articles/">Articles</a></li>
+			<li class="pr-2 font-semibold">Contact</li>
 		</ul>
 	</nav>
-	<header>
-		<h1> {{ title }} </h1>
-		<h3> {{ date }} </h3>
-		{% for tag in pagetags %}
-			<h5>{{ tag }}</h5>
-		{% endfor %}
-	</header>
-	<main>
+	<main class="grow px-7 sm:px-15 py-16">
 		{{ content }}
 	</main>
-	<footer>
-		<h4>Made using Eleventy</h4>
+	<footer class="p-7 sm:px-15 bg-lime-700">
+		<h1>Made using 11ty and Tailwind</h1>
 	</footer>
 </body>
 </html>
