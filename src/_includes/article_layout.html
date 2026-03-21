@@ -5,9 +5,9 @@ layout: layout.html
 <header class="p-8 mb-8 inset-ring bg-neutral-50">
 	<h1> {{ title }} </h1>
 	<h3> {{ page.date | formatDateOutput }} </h3>
-	<div class="flex">
+	<div class="flex flex-wrap">
 	{% for tag in pagetags %}
-		<h5 class="bg-green-500 mr-2 px-1">{{ tag }}</h5>
+		<h5 class="bg-green-500 my-1 mr-2 px-1">{{ tag }}</h5>
 	{% endfor %}
 	</div>
 </header>
@@ -15,3 +15,12 @@ layout: layout.html
 <div class="p-8 inset-ring bg-neutral-50">
 {{ content }}
 </div>
+
+{% if related_links %}
+<div class="p-8 inset-ring bg-neutral-50">
+	<h1>Related Links:</h1>
+	{% for link in related_links %}
+	<h2><a href="{{ link[1] }}" class="text-amber-600">{{ link[0] }}</a></h2>
+	{% endfor %}
+</div>
+{% endif %}
