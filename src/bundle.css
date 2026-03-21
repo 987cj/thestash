@@ -33,3 +33,13 @@ body {
     color: var(--color-orange-800);
   }
 }
+
+.custom-nav-links {
+  width: 100%;
+}
+
+@media (width >= 40rem) { 
+
+  .custom-nav-links {
+  }
+}

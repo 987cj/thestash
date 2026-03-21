@@ -5,24 +5,48 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="/styles.css">
 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+	<style>
+	.material-symbols-outlined {
+  	font-variation-settings:
+  	'FILL' 0,
+  	'wght' 450,
+  	'GRAD' 0,
+  	'opsz' 24
+	}
+	</style>
+
 	<title>{{ title | default: "987cj" }}</title>
 </head>
 <body class="font-sans h-screen flex flex-col">
-	<nav class="sticky inset-x-0 top-0 px-7 sm:px-15 py-3 drop-shadow-md bg-green-500">
-		<ul class="flex list-none">
-			<li class="w-15 font-extrabold"><a href="/" class="text-neutral-900">
-			987cj
-			</a></li>
-			<li class="w-15 mr-3 font-semibold"><a href="/projects/" class="text-neutral-900">
-			Projects
-			</a></li>
-			<li class="w-15 mr-2 font-semibold"><a href="/articles/" class="text-neutral-900">
-			Articles
-			</a></li>
-			<li class="font-semibold"><a href="/contact/" class="text-neutral-900">
-			Contact
-			</a></li>
-		</ul>
+	<nav class="sticky inset-x-0 top-0 drop-shadow-md">
+		<div class="flex flex-col sm:flex-row justify-center h-14">
+			<div class="grow flex z-2 justify-center content-center items-center px-7 sm:pl-15 sm:pr-4 py-3 sm:py-3 bg-green-500 drop-shadow-md sm:drop-shadow-none">
+
+				<a href="/" class="w-15 sm:grow sm:text-right font-extrabold text-neutral-900">
+				987cj
+				</a>
+
+				<div class="custom-hamburger inline sm:hidden hover:text-neutral-50">
+					<span class="align-bottom material-symbols-outlined">menu</span>
+				</div>
+			</div>
+
+			<ul class="absolute sm:static top-13 sm:top-auto hidden sm:flex! sm:max-w-5/8 flex-col sm:flex-row items-center sm:content-center m-0 py-2 sm:py-0 sm:justify-start bg-neutral-50 sm:bg-green-500 list-none custom-nav-links">
+
+				<li class="w-15 sm:mr-3 font-semibold"><a href="/projects/" class="text-neutral-900">
+				Projects
+				</a></li>
+
+				<li class="w-15 sm:mr-2 font-semibold"><a href="/articles/" class="text-neutral-900">
+				Articles
+				</a></li>
+
+				<li class="font-semibold"><a href="/contact/" class="text-neutral-900">
+				Contact
+				</a></li>
+			</ul>
+		</div>
 	</nav>
 	<main class="grow px-7 sm:px-15 py-16">
 		{{ content }}
@@ -30,5 +54,7 @@
 	<footer class="p-7 sm:px-15 bg-green-500">
 		<h1>Made using 11ty and Tailwind</h1>
 	</footer>
+
+	<script src="/index.js"></script> 
 </body>
 </html>

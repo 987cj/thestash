@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx @11ty/eleventy && npx pagefind --site '_site' && npx @tailwindcss/cli -i ./bundle.css -o ./_site/styles.css --minify",
+    "build": "npx @11ty/eleventy && npx pagefind --site '_site' && npx @tailwindcss/cli -i ./src/bundle.css -o ./_site/styles.css --minify",
     "dev": "npx @11ty/eleventy --serve & npx @tailwindcss/cli -i ./src/bundle.css -o ./_site/styles.css --watch"
   },
   "keywords": [],
