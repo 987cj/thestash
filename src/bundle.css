@@ -22,4 +22,14 @@ body {
     list-style-type: disc;
     margin-left: calc(var(--spacing) * 4);
   }
+  a {
+    color: var(--color-orange-600);
+  }
+  a:hover {
+    color: var(--color-red-500);
+    font-weight: 800;
+  }
+  a:active {
+    color: var(--color-orange-800);
+  }
 }
