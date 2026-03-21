@@ -1,0 +1,10 @@
+---
+layout: layout.html
+---
+
+<div class="p-8 inset-ring bg-neutral-50">
+<h1> Projects: </h1>
+{% for project in collections.project reversed %}
+	<h2><a href="{{ project.url }}" class="text-amber-600">{{ project.data.title }}</a></h2>
+{% endfor %}
+</div>

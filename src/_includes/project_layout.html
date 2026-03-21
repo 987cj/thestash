@@ -1,0 +1,22 @@
+---
+layout: layout.html
+---
+
+<header class="p-8 mb-8 inset-ring bg-neutral-50">
+	<h1> {{ title }} </h1>
+	<h3> {{ page.date | formatDateOutput }} </h3>
+	<div class="flex mb-1">
+	{% for tag in pagetags %}
+		<h5 class="bg-green-500 mr-2 px-1">{{ tag }}</h5>
+	{% endfor %}
+	</div>
+	<div class="flex">
+	{% for tag in techstack %}
+		<h5 class="bg-amber-500 mr-2 px-1">{{ tag }}</h5>
+	{% endfor %}
+	</div>
+</header>
+
+<div class="p-8 inset-ring bg-neutral-50">
+{{ content }}
+</div>
