@@ -10,19 +10,26 @@ scroll_text: ["HTML", "JavaScript", "CSS", "Tailwind", "C++", "WebDev", "GameDev
 </div>
 
 <div class="custom-section-bg">
-<h1>Latest Projects</h1>
-{% for project in collections.project %}
-	<h2><a href="{{ project.url }}">
-	{{ project.data.title }}
-	</a></h2>
-{% endfor %}
+<h1>What is the Stash?</h1>
+<p>The Stash is this website you're on right now! It's part portfolio, part blog - all made by yours truly.</p>
 </div>
 
-<div class="custom-section-bg">
-<h1>Latest Articles</h1>
-{% for article in collections.article reversed limit:5 %}
-	<h2><a href="{{ article.url }}">
-	{{ article.data.title }}
-	</a></h2>
-{% endfor %}
+<div class="block sm:flex sm:w-full sm:justify-between sm:gap-2">
+	<div class="custom-section-bg flex-1/2">
+	<h1>Latest Projects</h1>
+	{% for project in collections.project %}
+		<h2><a href="{{ project.url }}">
+		{{ project.data.title }}
+		</a></h2>
+	{% endfor %}
+	</div>
+
+	<div class="custom-section-bg flex-1/2">
+	<h1>Latest Articles</h1>
+	{% for article in collections.article reversed limit:5 %}
+		<h2><a href="{{ article.url }}">
+		{{ article.data.title }}
+		</a></h2>
+	{% endfor %}
+	</div>
 </div>
