@@ -3,7 +3,7 @@ import { DateTime } from "luxon";
 export default function(eleventyConfig) {
 	eleventyConfig.setInputDirectory("src");
 
-	eleventyConfig.addPassthroughCopy("src/index.js")
+	eleventyConfig.addPassthroughCopy("src/index.js");
 
 	eleventyConfig.addDateParsing(function(dateValue) {
 		if (typeof dateValue === "string") {

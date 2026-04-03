@@ -1,12 +1,13 @@
 ---
 layout: layout.html
 ---
-<div class="p-8 mb-8 inset-ring bg-neutral-50">
+
+<div class="custom-section-bg">
 <h1>Who am I?</h1>
 <p>My name is Caitlin and I'm a student currently studying at Adelaide University. Here you can find my personal thoughts and works on technology. My main interests are in websites and games.</p>
 </div>
 
-<div class="p-8 mb-8 inset-ring bg-neutral-50">
+<div class="custom-section-bg">
 <h1>Latest Projects</h1>
 {% for project in collections.project reversed limit:5%}
 	<h2><a href="{{ project.url }}">
@@ -15,7 +16,7 @@ layout: layout.html
 {% endfor %}
 </div>
 
-<div class="p-8 mb-8 inset-ring bg-neutral-50">
+<div class="custom-section-bg">
 <h1>Latest Articles</h1>
 {% for article in collections.article reversed limit:5%}
 	<h2><a href="{{ article.url }}">
