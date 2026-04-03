@@ -1,0 +1,31 @@
+<style>
+	@keyframes scroll {
+		to {
+			transform: translateX(calc(-100% - var(--gap)));
+		}
+	}
+
+	.component-scroll-ul {
+		--gap: calc(var(--spacing) * 2);
+		gap: var(--gap);
+		animation: scroll 15s linear infinite;
+	}
+
+
+</style>
+<div class="py-3 mb-8 text-sm bg-lime-300 border-1 flex overflow-hidden select-none">
+	<ul class="component-scroll-ul list-none shrink-0 min-w-full flex justify-between items-center">
+		<li class="font-bold">Welcome to the Stash</li>
+		{% for text in scroll_text %}
+		<li class="italic mx-2">{{ text }}</li>
+		{% endfor %}
+		<li></li>
+	</ul>
+	<ul class="component-scroll-ul aria-hidden list-none shrink-0 min-w-full flex justify-between gap-2 items-center">
+		<li class="font-bold">Welcome to the Stash</li>
+		{% for text in scroll_text %}
+		<li class="italic mx-2">{{ text }}</li>
+		{% endfor %}
+		<li></li>
+	</ul>
+</div>
