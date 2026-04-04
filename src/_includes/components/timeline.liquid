@@ -1,0 +1,27 @@
+<div class="custom-section-bg">
+	<h1 class="mb-2">My Personal Timeline!</h1>
+	<div class="bg-lime-300 flex flex-col border border-dashed">
+		{% for event in timeline | sort: "date" %}
+		{% capture eventCycle %}{%  cycle "odd",  "even" %}{% endcapture %}
+		<div class="flex flex-row">
+			<div class="relative bg-lime-50 p-1 ml-10 sm:m-0 order-0 sm:order-2 border-x">
+				<i class="ri-octagon-fill absolute top-5 text-lime-600 left-1/2 transform-[translateX(-50%)] text-3xl"></i>
+			</div>
+			{% if eventCycle == "odd" %}
+			<div class="grow wrap-break-word p-5 w-9/10 sm:max-w-1/2">
+				<h2 class="p-2 mb-2 bg-lime-50 border">{{ event.date }}</h2>
+				<p class="p-2 bg-red-400 border">{{ event.content }}</p>
+			</div>
+			<div class="hidden sm:block sm:grow sm:order-3"></div>
+			{% endif %}
+			{% if eventCycle == "even" %}
+			<div class="grow wrap-break-word p-5 w-9/10 sm:max-w-1/2 sm:order-3">
+				<h2 class="p-2 mb-2 bg-lime-50 border">{{ event.date }}</h2>
+				<p class="p-2 bg-red-400 border">{{ event.content }}</p>
+			</div>
+			<div class="hidden sm:block p-5 sm:grow sm:order-1 sm:min-w-1/2"></div>
+			{% endif %}
+		</div>
+		{% endfor %}
+	</div>
+</div>
