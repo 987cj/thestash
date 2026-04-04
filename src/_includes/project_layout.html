@@ -17,7 +17,7 @@ layout: layout.html
 	</div>
 	<div class="flex flex-wrap">
 	{% for link in links %}
-		<a href="{{ link[1] }}" class="bg-green-500 hover:bg-lime-500 mr-2 p-2 font-semibold text-neutral-900 drop-shadow">
+		<a href="{{ link[1] }}" class="bg-green-500 hover:bg-lime-500 mr-2 p-2 font-semibold text-neutral-900 drop-shadow hover:transform-[scale(1.15)] transition ease-in-out">
 		{{ link[0] }}
 		</a>
 	{% endfor %}
