@@ -3,7 +3,7 @@ title: Blog Website - The Stash
 date: "2026-03-16 Australia/Adelaide"
 pagetags: ["#webdev"]
 techstack: ["#html", "#css", "#javascript", "#eleventy", "#tailwind"]
-links: { "GitHub": "https://github.com/987cj/" }
+links: { "GitHub": "https://github.com/987cj/thestash" }
 ---
 
 # A Personal Website & Professional Portfolio
