@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/styles.css">
+
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+
+	<title>987cj</title>
+</head>
+<body class="font-sans h-screen flex flex-col">
+	<nav class="sticky inset-x-0 top-0 drop-shadow-md z-2">
+	<div class="flex flex-col sm:flex-row justify-center h-14">
+		<div class="grow flex z-2 justify-center content-center items-center px-7 sm:pl-15 sm:pr-4 py-3 sm:py-3 bg-green-500 drop-shadow-md sm:drop-shadow-none">
+
+			<a href="/" class="w-15 sm:grow sm:text-right font-extrabold text-neutral-900">
+			987cj
+			</a>
+
+			<div class="custom-hamburger inline sm:hidden">
+				<i class="ri-menu-line text-2xl font-bold text-neutral-900 hover:text-neutral-100"></i>
+			</div>
+		</div>
+
+		<ul class="absolute sm:static top-13 sm:top-auto hidden sm:flex! flex-col sm:flex-row items-center sm:content-center m-0 py-2 sm:py-0 sm:justify-start bg-neutral-50 sm:bg-green-500 list-none custom-nav-links transition-all">
+
+			<li class="w-15 sm:mr-3 font-semibold"><a href="/projects/" class="text-neutral-900">
+			Projects
+			</a></li>
+
+			<li class="w-15 sm:mr-2 font-semibold"><a href="/articles/" class="text-neutral-900">
+			Articles
+			</a></li>
+
+			<li class="font-semibold"><a href="/contact/" class="text-neutral-900">
+			Contact
+			</a></li>
+		</ul>
+	</div>
+</nav>
+
+	<a href="#" class="fixed place-self-end bottom-[2vh] mr-5 mt-[100vh]">
+	<div class="animate-bounce border border-neutral-900 border-dashed rounded-full bg-green-600 p-2 w-fit">
+		<svg width="48" height="48" viewBox="0 0 112 117" fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="3px" stroke-linecap="round" stroke-linejoin="round"><path d="M89.0949 86.8304L81.5249 91.3104L71.2149 73.5304L60.3849 54.8504L51.2149 39.0304V114.65L40.3849 108.4V32.7804L29.4649 39.0004L10.0749 50.0604L2.49487 36.8304L45.7949 12.1504L46.4049 13.2004L54.0549 26.3904L60.3849 37.3104L71.2149 55.9904L89.0949 86.8304Z" stroke="#E0E0E0" stroke-linejoin="round"/><path d="M40.385 32.7804V34.1804L30.075 40.0604L10.075 50.0604L29.465 39.0004L40.385 32.7804Z" stroke="#E0E0E0" stroke-linejoin="round"/><path d="M109.095 76.8304L101.525 81.3104L81.5249 91.3104L89.0949 86.8304L109.095 76.8304Z" stroke="#E0E0E0" stroke-linejoin="round"/><path d="M109.095 76.8304L89.0949 86.8304L71.2149 55.9904L60.3849 37.3104L54.0549 26.3904L46.4049 13.2004L45.7949 12.1504L65.7949 2.15039L109.095 76.8304Z" stroke="#E0E0E0" stroke-linejoin="round"/><path d="M71.2148 73.5304V104.65L51.2148 114.65V39.0304L60.3848 54.8504L71.2148 73.5304Z" stroke="#E0E0E0" stroke-linejoin="round"/></svg>
+	</div>
+</a>
+
+	<main class="grow px-7 sm:px-15 py-8">
+		<style>
+	@keyframes scroll {
+		to {
+			transform: translateX(calc(-100% - var(--gap)));
+		}
+	}
+
+	.component-scroll-ul {
+		--gap: calc(var(--spacing) * 2);
+		gap: var(--gap);
+		animation: scroll 20s linear infinite;
+	}
+
+
+</style>
+<div class="py-3 mb-8 text-sm bg-lime-300 border-1 flex overflow-hidden select-none">
+	<ul class="component-scroll-ul list-none shrink-0 min-w-full flex justify-between items-center">
+		<li class="font-bold">Welcome to the Stash</li>
+		
+		<li class="italic mx-2">HTML</li>
+		
+		<li class="italic mx-2">JavaScript</li>
+		
+		<li class="italic mx-2">CSS</li>
+		
+		<li class="italic mx-2">Tailwind</li>
+		
+		<li class="italic mx-2">C++</li>
+		
+		<li class="italic mx-2">WebDev</li>
+		
+		<li class="italic mx-2">GameDev</li>
+		
+		<li></li>
+	</ul>
+	<ul class="component-scroll-ul aria-hidden list-none shrink-0 min-w-full flex justify-between items-center">
+		<li class="font-bold">Welcome to the Stash</li>
+		
+		<li class="italic mx-2">HTML</li>
+		
+		<li class="italic mx-2">JavaScript</li>
+		
+		<li class="italic mx-2">CSS</li>
+		
+		<li class="italic mx-2">Tailwind</li>
+		
+		<li class="italic mx-2">C++</li>
+		
+		<li class="italic mx-2">WebDev</li>
+		
+		<li class="italic mx-2">GameDev</li>
+		
+		<li></li>
+	</ul>
+</div>
+
+<div class="custom-section-bg">
+<h1>Who am I?</h1>
+<p>My name is Caitlin and I'm a student currently studying at Adelaide University. Here you can find my personal thoughts and works on technology. My main interests are in websites and games.</p>
+</div>
+
+<div class="custom-section-bg">
+<h1>What is the Stash?</h1>
+<p>The Stash is this website you're on right now! It's part portfolio, part blog - all made by yours truly.</p>
+<h1>What's it made out of?</h1>
+<p class="pb-0">The Stash was made using the following:</p>
+<ul class="pb-3">
+	<li>HTML, CSS, JavaScript - The Classics!</li>
+	<li>Eleventy - Static Site Generator</li>
+	<li>Liquid, Markdown - Templating (used with Eleventy)</li>
+	<li>Tailwind - CSS Framework</li>
+	<li>Remix Icon, Isocons - Icon Libraries</li>
+</ul>
+<h1>Learn more about the Stash!</h1>
+<p>See the <a href="/projects/stash">project page</a>, this <a href="/articles/1">article</a> I wrote on it, as well as the <a href="">GitHub</a> page!</p>
+</div>
+
+<div class="custom-section-bg">
+	<h1 class="mb-2">My Professional Timeline:</h1>
+	<div class="bg-lime-300 flex flex-col border border-dashed">
+		
+		
+		<div class="flex flex-row">
+			<div class="relative bg-lime-50 p-1 ml-10 sm:m-0 order-0 sm:order-2 border-x">
+				<i class="ri-octagon-fill absolute top-5 text-lime-600 left-1/2 transform-[translateX(-50%)] text-3xl"></i>
+			</div>
+			
+			<div class="grow wrap-break-word p-5 w-9/10 sm:max-w-1/2">
+				<h2 class="p-2 mb-2 bg-lime-50 border">2021-2022</h2>
+				<p class="p-2 bg-red-400 border">Worked as an IT SSO at St. Leonard's Primary School. Completed a Certificate III in Information Technologies.</p>
+			</div>
+			<div class="hidden sm:block sm:grow sm:order-3"></div>
+			
+			
+		</div>
+		
+		
+		<div class="flex flex-row">
+			<div class="relative bg-lime-50 p-1 ml-10 sm:m-0 order-0 sm:order-2 border-x">
+				<i class="ri-octagon-fill absolute top-5 text-lime-600 left-1/2 transform-[translateX(-50%)] text-3xl"></i>
+			</div>
+			
+			
+			<div class="grow wrap-break-word p-5 w-9/10 sm:max-w-1/2 sm:order-3">
+				<h2 class="p-2 mb-2 bg-lime-50 border">2023</h2>
+				<p class="p-2 bg-red-400 border">Started my Bachelor's of Mathematical & Computer Sciences at the University of Adelaide.</p>
+			</div>
+			<div class="hidden sm:block p-5 sm:grow sm:order-1 sm:min-w-1/2"></div>
+			
+		</div>
+		
+		
+		<div class="flex flex-row">
+			<div class="relative bg-lime-50 p-1 ml-10 sm:m-0 order-0 sm:order-2 border-x">
+				<i class="ri-octagon-fill absolute top-5 text-lime-600 left-1/2 transform-[translateX(-50%)] text-3xl"></i>
+			</div>
+			
+			<div class="grow wrap-break-word p-5 w-9/10 sm:max-w-1/2">
+				<h2 class="p-2 mb-2 bg-lime-50 border">2024</h2>
+				<p class="p-2 bg-red-400 border">Undertook an internship at Deloitte Adelaide as part of the Deloitte Academy.</p>
+			</div>
+			<div class="hidden sm:block sm:grow sm:order-3"></div>
+			
+			
+		</div>
+		
+		
+		<div class="flex flex-row">
+			<div class="relative bg-lime-50 p-1 ml-10 sm:m-0 order-0 sm:order-2 border-x">
+				<i class="ri-octagon-fill absolute top-5 text-lime-600 left-1/2 transform-[translateX(-50%)] text-3xl"></i>
+			</div>
+			
+			
+			<div class="grow wrap-break-word p-5 w-9/10 sm:max-w-1/2 sm:order-3">
+				<h2 class="p-2 mb-2 bg-lime-50 border">2026 (Midyear)</h2>
+				<p class="p-2 bg-red-400 border">I will complete my Bachelors!</p>
+			</div>
+			<div class="hidden sm:block p-5 sm:grow sm:order-1 sm:min-w-1/2"></div>
+			
+		</div>
+		
+	</div>
+</div>
+
+<div class="block sm:flex sm:w-full sm:justify-between sm:gap-5 sm:items-start">
+	<div class="custom-section-bg flex-1/2">
+	<h1>Latest Projects</h1>
+	
+		<h2><a href="/projects/stash/">
+		Blog Website - The Stash
+		</a></h2>
+	
+		<h2><a href="/projects/devils_workday/">
+		Game - Devil's Workday
+		</a></h2>
+	
+		<h2><a href="/projects/world_museum/">
+		Project Website - World Museum Digitisation Project
+		</a></h2>
+	
+		<h2><a href="/projects/timezone/">
+		Timezone Website
+		</a></h2>
+	
+		<h2><a href="/projects/libft/">
+		C Library - Libft
+		</a></h2>
+	
+	</div>
+
+	<div class="custom-section-bg flex-1/2">
+	<h1>Latest Articles</h1>
+	
+		<h2><a href="/articles/">
+		
+		</a></h2>
+	
+		<h2><a href="/articles/1/">
+		Making a Blog
+		</a></h2>
+	
+	</div>
+</div>
+	</main>
+
+	<footer class="p-7 sm:px-15 bg-green-500 flex justify-center">
+	<a href="" class="text-neutral-900 font-normal hover:text-neutral-50 hover:-translate-y-1 transition ease-in-out">
+		<i class="ri-github-fill text-4xl"></i>
+	</a>
+</footer>
+
+	<script src="/index.js"></script> 
+</body>
+</html>
