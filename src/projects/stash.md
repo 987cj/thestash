@@ -12,4 +12,6 @@ I wanted to create a website that would showcase my skills and experience in tec
 ## Tech Stack:
 - HTML, CSS, JavaScript
 - Eleventy: Static Site Generator
+- Liquid, Markdown: Templating
 - Tailwind: CSS Framework
+- Remix Icon, Isocons: Icon Libraries

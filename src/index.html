@@ -19,10 +19,10 @@ scroll_text: ["HTML", "JavaScript", "CSS", "Tailwind", "C++", "WebDev", "GameDev
 	<li>Eleventy - Static Site Generator</li>
 	<li>Liquid, Markdown - Templating (used with Eleventy)</li>
 	<li>Tailwind - CSS Framework</li>
-	<li>Remix Icon - Icon Library</li>
+	<li>Remix Icon, Isocons - Icon Libraries</li>
 </ul>
 <h1>Learn more about the Stash!</h1>
-<p>See this <a href="/articles/1">article</a> I wrote on it, as well as the <a href="">GitHub</a> page!</p>
+<p>See the <a href="/projects/stash">project page</a>, this <a href="/articles/1">article</a> I wrote on it, as well as the <a href="">GitHub</a> page!</p>
 </div>
 
 {% include 'components/timeline.liquid'%}
@@ -30,7 +30,7 @@ scroll_text: ["HTML", "JavaScript", "CSS", "Tailwind", "C++", "WebDev", "GameDev
 <div class="block sm:flex sm:w-full sm:justify-between sm:gap-5 sm:items-start">
 	<div class="custom-section-bg flex-1/2">
 	<h1>Latest Projects</h1>
-	{% for project in collections.project %}
+	{% for project in collections.project limit: 5 reversed offset: 1 %}
 		<h2><a href="{{ project.url }}">
 		{{ project.data.title }}
 		</a></h2>

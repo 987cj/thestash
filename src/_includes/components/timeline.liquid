@@ -1,5 +1,5 @@
 <div class="custom-section-bg">
-	<h1 class="mb-2">My Personal Timeline!</h1>
+	<h1 class="mb-2">My Professional Timeline:</h1>
 	<div class="bg-lime-300 flex flex-col border border-dashed">
 		{% for event in timeline | sort: "date" %}
 		{% capture eventCycle %}{%  cycle "odd",  "even" %}{% endcapture %}
