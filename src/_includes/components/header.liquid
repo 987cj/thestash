@@ -2,7 +2,7 @@
 	<div class="flex flex-col sm:flex-row justify-center h-14">
 		<div class="grow flex z-2 justify-center content-center items-center px-7 sm:pl-15 sm:pr-4 py-3 sm:py-3 bg-green-500 drop-shadow-md sm:drop-shadow-none">
 
-			<a href="/" class="w-15 sm:grow sm:text-right font-extrabold text-neutral-900">
+			<a href="{{ '/' | url }}" class="w-15 sm:grow sm:text-right font-extrabold text-neutral-900">
 			987cj
 			</a>
 
@@ -13,15 +13,15 @@
 
 		<ul class="absolute sm:static top-13 sm:top-auto hidden sm:flex! flex-col sm:flex-row items-center sm:content-center m-0 py-2 sm:py-0 sm:justify-start bg-neutral-50 sm:bg-green-500 list-none custom-nav-links transition-all">
 
-			<li class="w-15 sm:mr-3 font-semibold"><a href="/projects/" class="text-neutral-900">
+			<li class="w-15 sm:mr-3 font-semibold"><a href="{{ '/projects/' | url }}" class="text-neutral-900">
 			Projects
 			</a></li>
 
-			<li class="w-15 sm:mr-2 font-semibold"><a href="/articles/" class="text-neutral-900">
+			<li class="w-15 sm:mr-2 font-semibold"><a href="{{ '/articles/' | url }}" class="text-neutral-900">
 			Articles
 			</a></li>
 
-			<li class="font-semibold"><a href="/contact/" class="text-neutral-900">
+			<li class="font-semibold"><a href="{{ '/contact/' | url }}" class="text-neutral-900">
 			Contact
 			</a></li>
 		</ul>
