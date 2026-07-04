@@ -24,6 +24,7 @@ body {
   }
   a {
     color: var(--color-orange-600);
+    transition: font-weight 0.1s;
   }
   a:hover {
     color: var(--color-red-500);
