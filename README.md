@@ -11,4 +11,4 @@ The Stash is my personal website - part portfolio, part blog. Check it out!
 - Pagefind (Search Library)
 - Liquid (Template Engine)
 - Tailwind (CSS Framework)
-- Remix Icon, Isocons (Icon Libraries)
+- Dazicons, Isocons (Icon Libraries)
