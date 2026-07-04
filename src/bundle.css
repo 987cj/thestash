@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --font-silkscreen: "Silkscreen", sans-serif; 
+}
 
 body {
   background-size: 20px 20px;
@@ -6,17 +11,20 @@ body {
     linear-gradient(to right, var(--color-gray-400) 1px, transparent 1px),
     linear-gradient(to bottom, var(--color-gray-400) 1px, transparent 1px);
   background-attachment: fixed;
+  font-family: var(--font-silkscreen);
 }
 
 @layer components {
-	h1 {
-    font-weight: var(--font-weight-semibold);
+  h1 {
+    font-weight: var(--font-weight-bold);
   }
   h2 {
     font-weight: var(--font-weight-semibold);
   }
   p {
-    	padding-bottom: calc(var(--spacing) * 3);
+    font-family: var(--font-silkscreen);
+    color: var(--color-neutral-800);
+    padding-bottom: calc(var(--spacing) * 3);
   }
   ul {
     list-style-type: disc;
