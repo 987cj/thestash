@@ -1,7 +1,7 @@
 {
-  "name": "987cj",
+  "name": "theStash",
   "version": "1.0.0",
-  "description": "",
+  "description": "Personal site of 987cj.",
   "main": "index.js",
   "scripts": {
     "build": "npx @11ty/eleventy --pathprefix 'thestash' && npx pagefind --site '_site' && npx @tailwindcss/cli -i ./src/bundle.css -o ./_site/styles.css --minify",
