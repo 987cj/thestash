@@ -4,7 +4,10 @@ layout: layout.html
 
 <header class="custom-section-bg">
 	<h1> {{ title }} </h1>
-	<h3> {{ page.date | formatDateOutput }} </h3>
+	<h3> Created: {{ page.date | formatDateOutput }} </h3>
+	{% if updated %}
+	<h3> Updated: {{ updated | formatUpdateOutput }} </h3>
+	{% endif %}
 	<div class="flex flex-wrap">
 	{% for tag in pagetags %}
 		<h5 class="bg-green-500 my-1 mr-2 px-1">{{ tag }}</h5>

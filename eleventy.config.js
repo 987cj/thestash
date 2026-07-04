@@ -18,4 +18,14 @@ export default function(eleventyConfig) {
 	eleventyConfig.addFilter("formatDateOutput", function(value) {
 		return(value.toLocaleDateString());
 	})
+
+	eleventyConfig.addFilter("formatUpdateOutput", function(value) {
+		var a;
+		if (typeof value === "string" && value != "") {
+			a = DateTime.fromFormat(value, "yyyy-MM-dd z");
+			return (a.toLocaleString());
+		}
+		return ("")
+	})
+
 };
