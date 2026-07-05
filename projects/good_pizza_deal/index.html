@@ -10,26 +10,31 @@
 	<title>Good Pizza Deal</title>
 </head>
 <body class="font-sans h-screen flex flex-col">
-	<nav class="sticky inset-x-0 top-0 drop-shadow-md z-2">
+	<nav class="inset-x-0 top-0 z-2">
 	<div class="flex flex-col sm:flex-row justify-center h-14">
-		<div class="grow flex z-2 justify-center content-center items-center px-7 sm:pl-15 sm:pr-4 py-3 sm:py-3 bg-green-500 drop-shadow-md sm:drop-shadow-none">
+		<div class="grow flex z-2 justify-center content-center items-center px-7 sm:pl-15 sm:pr-4 py-3 sm:py-3 bg-green-500">
 
-			<a href="/thestash/" class="w-15 sm:grow sm:text-right font-extrabold text-neutral-900">
+			<a href="/thestash/" class="sm:grow sm:text-right text-4xl text-neutral-50 hover:font-normal">
 			987cj
 			</a>
 
-			<div class="custom-hamburger inline sm:hidden">
-				<i class="ri-menu-line text-2xl font-bold text-neutral-900 hover:text-neutral-100"></i>
+			<div class="custom-hamburger sm:hidden text-neutral-50">
+				<svg width="48px" height="48px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding-top:5px;">
+    				<title>carat-right</title>
+    				<g id="carat-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        			<polygon fill="currentColor" points="6 12 8 12 8 11 9 11 9 10 10 10 10 9 11 9 11 7 10 7 10 6 9 6 9 5 8 5 8 4 6 4"></polygon>
+    				</g>
+			</svg>
 			</div>
 		</div>
 
 		<ul class="absolute sm:static top-13 sm:top-auto hidden sm:flex! flex-col sm:flex-row items-center sm:content-center m-0 py-2 sm:py-0 sm:justify-start bg-neutral-50 sm:bg-green-500 list-none custom-nav-links transition-all">
 
-			<li class="w-15 sm:mr-3 font-semibold"><a href="/thestash/projects/" class="text-neutral-900">
+			<li class="sm:mr-3"><a href="/thestash/projects/" class="font-silkscreen sm:text-neutral-50 text-xl">
 			Projects
 			</a></li>
 
-			<li class="w-15 sm:mr-2 font-semibold"><a href="/thestash/articles/" class="text-neutral-900">
+			<li class="sm:mr-2"><a href="/thestash/articles/" class="font-silkscreen sm:text-neutral-50 text-xl">
 			Articles
 			</a></li>
 		</ul>
@@ -46,7 +51,8 @@
 		
 <header class="custom-section-bg">
 	<h1> Good Pizza Deal </h1>
-	<h3> 4/5/2026 </h3>
+	<h3> Created: 4/5/2026 </h3>
+	
 	<div class="flex flex-wrap">
 	
 		<h5 class="bg-green-500 my-1 mr-2 px-1">#webdev</h5>
@@ -87,8 +93,17 @@
 	</main>
 
 	<footer class="p-7 sm:px-15 bg-green-500 flex justify-center">
-	<a href="https://github.com/987cj/thestash" class="text-neutral-900 font-normal hover:text-neutral-50 hover:-translate-y-1 transition ease-in-out">
-		<i class="ri-github-fill text-4xl"></i>
+	<a href="https://github.com/987cj/thestash" class="text-neutral-50 hover:-translate-y-1 transition ease-in-out">
+	
+	<!-- Dazicons -->
+	<?xml version="1.0" encoding="UTF-8"?>
+	<svg width="32px" height="32px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>folder</title>
+    <g id="folder" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M15,7 L15,9 L15,9 L14,9 L14,11 L13,11 L13,13 L12,13 L12,14 L2,14 L2,13 L3,13 L3,11 L4,11 L4,9 L5,9 L5,7 L15,7 L15,7 Z M5,3 L5,4 L6,4 L6,5 L12,5 L12,6 L5,6 L5,7 L4,7 L4,9 L3,9 L3,11 L2,11 L2,13 L1,13 L1,3 L5,3 Z" fill="currentColor"></path>
+    </g>
+	</svg>
+
 	</a>
 </footer>
 
