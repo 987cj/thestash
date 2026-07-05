@@ -31,7 +31,7 @@ scroll_text: ["HTML", "JavaScript", "CSS", "Tailwind", "C++", "WebDev", "GameDev
 	<div class="custom-section-bg flex-1/2">
 	<h1>Latest Projects</h1>
 	{% for project in collections.project reversed limit:6 %}
-		<h2><a href="{{ project.url | url }}">
+		<h2 class="font-normal"><a title="{{ project.url | url }}" href="{{ project.url | url }}">
 		{{ project.data.title }}
 		</a></h2>
 	{% endfor %}
@@ -40,7 +40,7 @@ scroll_text: ["HTML", "JavaScript", "CSS", "Tailwind", "C++", "WebDev", "GameDev
 	<div class="custom-section-bg flex-1/2">
 	<h1>Latest Articles</h1>
 	{% for article in collections.article reversed limit:6 %}
-		<h2><a href="{{ article.url | url }}">
+		<h2 class="font-normal"><a href="{{ article.url | url }}">
 		{{ article.data.title }}
 		</a></h2>
 	{% endfor %}
