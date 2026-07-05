@@ -1,6 +1,7 @@
 ---
 title: Blog Website - The Stash
 date: "2026-03-16 Australia/Adelaide"
+updated: "2026-07-05 Australia/Adelaide"
 pagetags: ["#webdev"]
 techstack: ["#html", "#css", "#javascript", "#eleventy", "#tailwind"]
 links: { "GitHub": "https://github.com/987cj/thestash" }
@@ -14,4 +15,4 @@ I wanted to create a website that would showcase my skills and experience in tec
 - Eleventy: Static Site Generator
 - Liquid, Markdown: Templating
 - Tailwind: CSS Framework
-- Remix Icon, Isocons: Icon Libraries
+- Dazicons, Isocons: Icon Libraries
