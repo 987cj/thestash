@@ -6,6 +6,8 @@ The Stash is my personal website - part portfolio, part blog. Check it out!
 - `npm run build` to build the site
 - `npm run dev` to run the site on localhost
 
+GitHub build settings stored in .github/workflows
+
 ## Built With:
 - Eleventy (Static Site Generator)
 - Pagefind (Search Library)
